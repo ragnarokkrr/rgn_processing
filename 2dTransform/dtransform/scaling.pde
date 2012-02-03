@@ -11,6 +11,8 @@ class ScalingSample{
      stroke(0);
      pushMatrix();
      scale(2.0);
+     
+     translate(-20, -20);
      rect(20, 20, 40, 40);
      popMatrix();
     
