@@ -2,7 +2,8 @@ void setup(){
   //drawArcs();
   //drawSpline();
   //drawContinuousSpline();
-  drawBezier();
+  //drawBezier();
+  drawContinuousBezier();
 } 
 
 
