@@ -1,6 +1,13 @@
-stroke(255); // white
-stroke(255,255,255); // white
-stroke(255, 128, 0); // bright orange
-stroke(#FF8000); // bright orange as web
-stroke(255, 128, 0, 128); // bright orange 50%
+void setup(){
+  size(400, 400);
+  stroke(255);
+  background(192, 64, 0);
+
+}
+
+void draw(){
+ line(150, 25, mouseX, mouseY);
+}
+  
+  
 
