@@ -7,11 +7,13 @@ void setup(){
   
   //drawCorrectRotation();
   
-  cRotation = new ColorRotation ();
+  //cRotation = new ColorRotation ();
+  
+  new ScalingSample().drawScale();
   
 }
 
 void draw(){
-  cRotation.rotateColor();
+  //cRotation.rotateColor();
   
 }
