@@ -1,4 +1,17 @@
+ColorRotation cRotation;
+
 void setup(){
   //draw1stTrans();
-  drawHouseWithoutTransformation();
+  //drawHouseWithoutTransformation();
+  //drawRotation();
+  
+  //drawCorrectRotation();
+  
+  cRotation = new ColorRotation ();
+  
+}
+
+void draw(){
+  cRotation.rotateColor();
+  
 }
