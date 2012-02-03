@@ -9,8 +9,8 @@ void setup(){
   
   //cRotation = new ColorRotation ();
   
-  new ScalingSample().drawScale();
-  
+//  new ScalingSample().drawScale();
+  new OrderSample().drawSample();
 }
 
 void draw(){
