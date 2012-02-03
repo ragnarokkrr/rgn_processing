@@ -17,37 +17,50 @@ Draw
   display car location with color
   increment car's location by speed
 ***/
-int cval = 0;
-color c = color(cval); //black
-float x = 0;
-float y = 100;
-float speed = 1;
+Car myCar;
 
 void setup(){
   size(200,200);
+  myCar = new Car();
 }
 
 void draw(){
   background(255);
-  move();
-  //fade();
-  display();
+  
+  myCar.drive();
+  myCar.display();
+  
 }
 
-// move car Xpos
-void move(){
- x = x + speed;
- if (x > width){
-  x = 0;
- } 
-}
 
-void fade(){
-  c = color( --cval % 255);
-}
+class Car{
+  color c;
+  float xpos;
+  float ypos;
+  float xspeed;
+  
+  Car(){
+   c = color(255);
+   xpos = width / 2;
+   ypos = height / 2;
+   xspeed = 1;
+    
+  }
 
-//car draw
-void display(){
- fill(c); 
- rect(x,y, 30, 10);
-}
+  //car draw
+  void display(){
+   rectMode(CENTER);
+   fill(c); 
+   rect(xpos,ypos, 30, 10);
+  }
+
+  // move car Xpos
+  void drive(){
+   xpos = xpos + xspeed;
+   if (xpos > width){
+    xpos = 0;
+   } 
+  }
+}//class car
+
+
