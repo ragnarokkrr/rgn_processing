@@ -1,7 +1,7 @@
 void setup(){
   //drawArcs();
-  drawSpline();
-  
+  //drawSpline();
+  drawContinuousSpline();
 } 
 
 
