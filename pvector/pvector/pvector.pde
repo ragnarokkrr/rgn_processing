@@ -5,17 +5,21 @@ MultTest multTest;
 MagTest magTest;
 NormalTest normalTest;
 
+MouseAnimation mouseAnimation;
+
 Mover mover;
 
 void setup(){
+  size(200, 200);
+  background(255);
   //this.bouncingBall = new BouncingBall(); 
   //this.vectorBouncingBall = new VectorBouncingBall();
   //this.subTest = new SubTest();
   //this.multTest = new MultTest();
   //this.magTest = new MagTest();
   //this.normalTest = new NormalTest();
-  mover = new Mover();
-  
+  //mover = new Mover();
+  mouseAnimation = new MouseAnimation(); 
 }
 
 void draw(){
@@ -26,7 +30,9 @@ void draw(){
   //this.magTest.drawMe();
   //this.normalTest.drawMe();
   
-  mover.update();
-  mover.checkEdges();
-  mover.display(); 
+  //mover.update();
+  //mover.checkEdges();
+  //mover.display(); 
+  mouseAnimation.drawMe();
+  
 }

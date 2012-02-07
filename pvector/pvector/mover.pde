@@ -12,6 +12,11 @@ class Mover{
   }
   
   void update(){
+    acceleration = new PVector(random(-1,1), random(-1,1));
+    acceleration.normalize();
+    acceleration.mult(random(2));
+    
+    
     velocity.add(acceleration);
     velocity.limit(topSpeed);
     location.add(velocity); 
