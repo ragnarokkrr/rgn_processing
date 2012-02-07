@@ -72,6 +72,9 @@ class SecondExample{
   }
 
   void polygon(int n, float cx, float cy, float w, float h, float startAngle){
+    if(n < 3){// not a polygon
+      return;
+    }
     float angle = TWO_PI / n; 
     /* the horizontal "radius" is one half the width;
       the vertical "radius" is one half the height */
