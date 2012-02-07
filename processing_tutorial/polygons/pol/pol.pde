@@ -1,6 +1,6 @@
 void setup(){
-  new FirstExample().drawMe();
-  
+  //new FirstExample().drawMe();
+  new SecondExample().drawMe();
 }
 
 
